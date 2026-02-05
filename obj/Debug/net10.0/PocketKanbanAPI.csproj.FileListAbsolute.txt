@@ -187,3 +187,4 @@ C:\Users\furka\Desktop\PocketKanbanAPI\bin\Debug\net10.0\runtimes\win-arm\native
 C:\Users\furka\Desktop\PocketKanbanAPI\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\furka\Desktop\PocketKanbanAPI\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\furka\Desktop\PocketKanbanAPI\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\furka\Desktop\PocketKanbanAPI\obj\Debug\net10.0\PocketKanbanAPI.sourcelink.json

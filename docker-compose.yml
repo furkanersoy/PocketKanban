@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: pocketkanban-db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=123456789Ff!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql 
+
+  api:
+    build: .
+    container_name: pocketkanban-api
+    depends_on:
+      - db 
+    ports:
+      - "5000:8080" 
+    environment:
+
+      - ConnectionStrings__DefaultConnection=Server=db;Database=PocketKanbanDB;User=sa;Password=123456789Ff!;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=Development 
+volumes:
+  sql_data:
